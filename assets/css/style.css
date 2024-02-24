@@ -1,0 +1,246 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family:Clarendon;
+    src: url(../font/Clarendon\ BT\ Bold.ttf);
+}
+
+@font-face {
+    font-family:Cralika;
+    src: url(../font/cralika-font-1707571657-0/cralika.otf);
+}
+
+@font-face {
+    font-family:Poppins;
+    src: url(../font/Poppins_Font_Family/Poppins\ Light\ 300.ttf);
+}
+:root{
+    --Claredon-font:'Clarendon';
+    --Cralika-font:'Cralika';
+    --Poppins-font:'Poppins';
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    font-family: var(--Poppins-font);
+    letter-spacing: 3px;
+}
+a.btn{
+    background-color:#a92940 ;
+    padding: 1rem 1.5rem !important;
+    color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+}
+nav, .hero, section{
+    max-width: 1550px;
+    margin: auto;
+    padding: 2rem;
+}
+.header{
+    height: 100vh;
+    background-image: url(../img/FINAL/9N3A3961e.jpg);
+    background-position: center;
+    background-size: cover;
+}
+nav, nav .items ul{
+    color: #fff;
+    display: flex;
+    gap:2rem;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+nav .items ul a {
+    padding: 10px 15px; /* Increase padding for better clickability */
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold; /* Make the font bold */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease; /* Add smooth color transition on hover */
+}
+
+nav .items ul a:hover {
+    color: #ffa500; /* Change text color on hover */
+}
+nav h1{
+    font-family: var(--Cralika-font);
+    letter-spacing: 2px;
+}
+.hero .text h1{
+    font-size: 60px;
+    color: #fff;
+    font-family: var(--Poppins-font);
+}
+.hero{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.hero .text{
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+nav .items a.active{
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+section.one >div {
+    padding: 5%;
+    font-family: var(--Poppins-font);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    gap: 3rem;
+    align-items: center;
+}
+section.one .text h1{
+    font-size: 32px;
+    font-family: var(--Poppins-font);
+}
+section.one img{
+    max-width: 500px;
+}
+section.one .text{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+section.two{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem
+}
+section.two h1{
+    font-family: var(--Cralika-font);
+    font-size: 32px;
+}
+section.two > div{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+}
+section.two > div > img{
+    max-width: 33%; 
+}
+section.three{
+    min-height: 100vh;
+}
+section.four{
+    background: #000000b6;
+    background-image: url(../img/FINAL/Gerald\ \(2\ of\ 14\)e.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    min-height: 100vh;
+    color: #fff;
+    font-family: var(--Poppins-font);
+    padding:5%;
+    display: flex;
+    align-items: center;
+}
+section.four h1{
+    font-size: 48px;
+    text-transform: uppercase;
+}
+section.four > div{
+    max-width: 500px;
+}
+@media screen and (max-width:1000px) {
+    .header nav .items{
+        display: none;
+    }
+    .hero .text h1{
+        font-size: 32px;
+    }
+    
+.hero .text{
+    max-width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+a.btn{
+    padding: 1rem;
+}
+section.one > div{
+    flex-direction: column;
+}
+}
+footer hr{
+    margin: 2%;
+}
+footer{
+    margin: 2%;
+    font-family: var(--Poppins-font);
+    text-align: center;
+}
+  .gallery-intro {
+    text-align: center;
+  }
+  
+  .gallery-intro h2 {
+    font-size: 34px;
+    font-family: var(--Poppins-font);
+  }
+  
+  .gallery-intro p {
+    font-size: 16px;
+    font-family: var(--Poppins-font);
+    color: #000;
+  }
+  
+  .gallery-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .gallery-preview img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-preview img:hover {
+    transform: scale(1.1);
+  }
+  .media-company {
+    background-color: #f9f9f9;
+    padding: 5%;
+    font-family: var(--Poppins-font);
+    display: flex;
+    gap: 2rem;
+
+  }
+  
+  .media-content {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .media-content h2 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+  
+  .media-content p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  .gallery-intro{
+    margin-bottom: 30px;
+  }
