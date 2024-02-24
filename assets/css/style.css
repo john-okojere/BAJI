@@ -244,3 +244,13 @@ footer{
   .gallery-intro{
     margin-bottom: 30px;
   }
+@media screen and (max-width:1000px) {
+    .media-company{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    section.one .text{
+        text-align: center;
+    }
+}
