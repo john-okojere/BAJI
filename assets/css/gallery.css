@@ -127,6 +127,7 @@ section.fourth img{
     margin: auto;
     display: block;
     max-height: 90vh;
+    width: fit-content;
   }
   
   /* Image zoom */
